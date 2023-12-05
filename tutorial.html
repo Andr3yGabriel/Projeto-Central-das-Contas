@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciador de Contas</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+</head>
+<body>
+    <header id="tutorial" class="tutorial">
+        <a href="index.html"><img src="logo4.png" alt="Logo" class="logo"></a>
+    </header>
+    <div class="textarea2">
+        <p>
+            Ao pressionar o botão "Comece Já", você séra direcionado a aba principal do
+            nosso site, onde poderá encontrar a funcionalidade que lhe permite inserir suas
+            contas e seu salário.
+        </p>
+        <p>
+            No bloco chamado "Cadastro de Contas" você terá as opções "Nome da conta",
+            "Valor da Conta", "Forma de pagamento" e "Salário em Reais", os quais são responsáveis
+            pela personalização das informações das suas, possibilitando uma organização das contas
+            de forma que você possa entender. Após inserir todos os dados você só precisa pressionar
+            o botão "Adicionar Conta" e as informações vão ser transferidas e exibidas no bloco
+            "Lista de Contas".
+        </p>
+        <p>
+            No bloco "Lista de Contas", cada vez que uma nova conta é adicionada as suas informações
+            são mostradas na tela de forma que você possa ficar de olho em suas contas e avaliar se
+            está esquecendo algo ou não. Além disso, ao terminar de inserir sua lista de contas você
+            pode apertar no botão "Gerar Relatório" e baixar um arquivo de texto com a sua lista de 
+            despesas e deixar guardado em seu computador ou outro dispositivo de preferência, evitando
+            assim, a perda de seus dados.
+        </p>
+        <p>
+            No último bloco, "Análise de Contas", ao finalizar a entrada das suas contas você pode
+            apertar o botão "Gerar Análise" e então será exibido um gráfico com todas as contas
+            inseridas na lista e uma análise da porcentagem que as suas contas tomam de seu salário.
+        </p>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("tutorial").style.top = "0";
+            } else {
+                document.getElementById("tutorial").style.top = "-150px"; // Ajuste conforme necessário
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

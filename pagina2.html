@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciador de Contas</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="pagina2">
+            <a href="index.html"><img src="logo4.png" alt="Logo" class="logo"></a>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="form-box cadastroContas">
+                    <h2>Cadastro de Contas</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
+                            <input type="number" id="valorSalario" required>
+                            <label>Salário em reais</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="text-outline"></ion-icon></span>
+                            <input type="text" id="nomeConta" required>
+                            <label>Nome da Conta</label>
+                        </div> 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
+                            <input type="number" id="valorConta" required>
+                            <label>valor da Conta</label>
+                        </div>
+                        <div class="select-box">
+                            <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
+                            <select name="formaPagamento" id="tipoConta">
+                                <option value="formaPagamento" selected disabled>Forma de Pagamento</option>
+                                <option value="Débito">Débito</option>
+                                <option value="Crédito">Crédito</option>
+                                <option value="Boleto">Boleto</option>
+                                <option value="Dinheiro">Dinheiro</option>
+                            </select>
+                        </div>
+                        <button onclick="adicionarConta()" class="btn">Adicionar Conta</button>
+                    </form>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="form-box listaContas">
+                    <h2>Lista de Contas</h2>
+                    <ul id="listaContas"></ul>
+                    <button onclick="gerarRelatorio()" class="btn">Gerar Relatório</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="form-box listaContas">
+                    <h2>Análise de Contas</h2>
+                    <canvas id="myChart"></canvas>
+                    <p id="porcentagem"><strong></strong></p>
+                    <button onclick="criarGrafico(); analiseContas();" class="btn">Gerar Análise</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
