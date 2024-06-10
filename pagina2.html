@@ -38,9 +38,10 @@
                                 <option value="Crédito">Crédito</option>
                                 <option value="Boleto">Boleto</option>
                                 <option value="Dinheiro">Dinheiro</option>
+                                <option value="Pix">Pix</option>
                             </select>
                         </div>
-                        <button onclick="adicionarConta()" class="btn">Adicionar Conta</button>
+                        <button onclick="adicionarConta()" class="btn-card">Adicionar Conta</button>
                     </form>
                 </div>
             </div>
@@ -48,16 +49,16 @@
                 <div class="form-box listaContas">
                     <h2>Lista de Contas</h2>
                     <ul id="listaContas"></ul>
-                    <button onclick="gerarRelatorio()" class="btn">Gerar Relatório</button>
+                    <button onclick="gerarRelatorio()" class="btn-card">Gerar Relatório</button>
                 </div>
             </div>
             <div class="wrapper">
-                <div class="form-box listaContas">
+                <div class="form-box analiseContas">
                     <h2>Análise de Contas</h2>
                     <canvas id="myChart"></canvas>
-                    <p id="porcentagem"><strong></strong></p>
-                    <button onclick="criarGrafico(); analiseContas();" class="btn">Gerar Análise</button>
+                    <p id="porcentagem"></p>
                 </div>
+                <button onclick="criarGrafico(); analiseContas()" class="btn-card">Gerar Análise</button>
             </div>
         </div>
 
