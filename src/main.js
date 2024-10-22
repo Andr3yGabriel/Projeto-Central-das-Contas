@@ -75,6 +75,8 @@ function atualizarListaContas() {
   });
       
   alert('Lista alterada com sucesso');
+  analiseContas();
+  criarGrafico();
 }
     
 // Função para editar a conta (você precisa implementar)
