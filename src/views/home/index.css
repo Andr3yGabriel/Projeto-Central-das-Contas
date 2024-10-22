@@ -1,0 +1,86 @@
+.pagina1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25em 6.25em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5em;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 0.1875em;
+    background: #000;
+    border-radius: 0.3125em;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btn-start {
+    width: 31.25em;
+    height: 9.375em;
+    text-align: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu {
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.welcome {
+    text-align: center;
+    align-items: center;
+    font-weight: 550;
+    font-size: 1.5em;
+}
+
+.textarea {
+    width: 31.25em;
+    text-align: justify;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 1em;
+    color: black;
+}
+
+blockquote {
+    margin-top: 1.25em;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+}

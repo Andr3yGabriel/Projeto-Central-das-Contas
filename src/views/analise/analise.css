@@ -1,0 +1,172 @@
+.container{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pagina2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25em 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.listaContas h2 {
+    position: fixed;
+    top: 0;
+    left: 4.5em;
+    font-size: 1.5em;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+.analiseContas h2 {
+    position: fixed;
+    top: 0;
+    left: 4em;
+    font-size: 1.5em;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+.cadastroContas h2{
+    position: fixed;
+    top: 0;
+    left: 3.1em;
+    font-size: 1.5em;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper {
+    position: relative;
+    width: 25em;
+    height: 28.75em;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.25em;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 2.5em;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 3.125em;
+    border-bottom: 2px solid #000000;
+    margin: 1.875em 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125em;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000000;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 5px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 600;
+    padding: 0 2.1875em 0 0.3125em;
+}
+.input-box .icon {
+    position: absolute;
+    right: 0.5em;
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 3.75em;
+}
+.select-box {
+    position: relative;
+    width: 100%;
+    height: 3.125em;
+    border-bottom: 2px solid #000000;
+    margin: 1.875em 0;
+}
+.select-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 600;
+    padding: 0 2.1875em 0 0.3125em;
+}
+.select-box .icon {
+    position: absolute;
+    right: 1.25em;
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 3.75em;
+}
+.btn {
+    width: 100%;
+    height: 2.8125em;
+    background: orange;
+    border: none;
+    outline: none;
+    border-radius: 0.625em;
+    cursor: pointer;
+    font-size: 1em;
+    color: #FFFF;
+    font-weight: 500;
+    margin-bottom: 0.625em;
+}
+.btn-card {
+    position: absolute;
+    bottom: 0.1em;
+    left: 1em;
+    width: 23em;
+    height: 3em;
+    background: orange;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #FFFF;
+    font-weight: 500;
+    margin-bottom: 0.625em;
+}
+#porcentagem {
+    font-size: 1em;
+    color: #000;
+}
+.grafico {
+    height: 17em;
+    align-items: center;
+    justify-content: center;
+}
